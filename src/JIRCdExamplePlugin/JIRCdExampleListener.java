@@ -6,7 +6,7 @@ import JIRCd.Events.EventListener;
 
 public class JIRCdExampleListener extends EventListener {
 	public void OnClientJoinChannel(ClientJoinChannelEvent Event) {
-		System.out.println(Event.GetClient().Nickname + " joined " + Event.GetChannel());
+		System.out.println(Event.GetClient().Nickname + " joined " + Event.GetChannel().Name);
 	}
 	
 	public void OnClientSendChannelMessage(ClientSendChannelMessageEvent Event) {
